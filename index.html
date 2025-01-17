@@ -17,7 +17,11 @@
       <div class="wrapper" data-type="wide">
         <div class="site-header__inner">
           <img src="/assets/fungi-finders.svg" alt="" />
-          <nav class="primary-nav">
+          <button aria-controls="primary-nav" aria-expanded="false">
+            <span class="visually-hidden">Menu</span>
+            <img src="/assets/hamburger.svg" alt="" />
+          </button>
+          <nav id="primary-nav " class="primary-nav">
             <ul>
               <li><a href="/">DIscover</a></li>
               <li><a href="#">Mushroom Guide</a></li>
@@ -199,5 +203,6 @@
         <a href="mailto:contact@fungifinders.com">contact@fungifinders.com</a>
       </footer>
     </main>
+    <script src="/main.js"></script>
   </body>
 </html>
