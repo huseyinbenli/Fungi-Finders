@@ -88,13 +88,13 @@
           <div class="flow">
             <h2 class="section-heading">Get to know your mushrooms</h2>
             <div class="flex-group">
-              <select id="season">
+              <select name="season" id="season">
                 <option value="all">Season: All</option>
                 <option value="spring">Spring</option>
                 <option value="summer">Summer</option>
-                <option value="fall ">Fall</option>
+                <option value="fall">Fall</option>
               </select>
-              <select id="edible">
+              <select name="edible" id="edible">
                 <option value="all">Type: All</option>
                 <option value="edible">Edible</option>
                 <option value="toxic">Toxic</option>
@@ -110,7 +110,7 @@
                   role="list"
                   aria-label="Mushroom characteristics"
                 >
-                  <li data-edible="edibles">
+                  <li data-edible="edible">
                     <span class="visually-hidden">This mushroom is</span>
                     edible
                   </li>
@@ -404,6 +404,7 @@
                   Verify identification - has toxic look-alikes
                 </div>
               </div>
+              <div class="no-matches" hidden>No matches for these filters.</div>
             </div>
           </div>
         </div>
@@ -489,6 +490,6 @@
       </footer>
     </main>
     <script src="/main.js"></script>
-    <script src="/mushroom-filter"></script>
+    <script src="/mushroom-filter.js"></script>
   </body>
 </html>
