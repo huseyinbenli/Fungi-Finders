@@ -14,7 +14,9 @@ edibleFilter.addEventListener("change", updateFilter);
 function updateFilter(e) {
   const filterType = e.target.name;
   currentFilters[filterType] = e.target.value;
-  console.log(filterType);
+
+  // console.log(filterType);
+
   filterCards();
 }
 
